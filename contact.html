@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="contact.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="contact.css">
 </head>
+
 <body>
   <header>
     <div class="container">
@@ -25,7 +27,7 @@
           <li><a href="service.html">Services</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-        <div class  ="sb">
+        <div class="sb">
           <input type="text" name="search" id="" placeholder="Search">
           <button>
             login
@@ -35,7 +37,53 @@
       </nav>
     </div>
   </header>
-      <main>this is contact</main>
-      <script src="script.js"></script>
+  <main>
+    <div class="report-form">
+      <div>
+        <h2>Report abuse</h2>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required>
+          <br>
+          <label for="contact">Contact</label>
+          <input type="text" name="contact" id="contact" required>
+          <br>
+          <label for="report">What do you want to report?</label>
+          <select name="report" id="report" required>
+            <option value="" selected>--Select--</option>
+            <option value="illtreatment/voilence">Illtreatment/Voilence</option>
+            <option value="abandonment">Abandonment</option>
+            <option value="rescue">Rescue request</option>
+          </select>
+          <br>
+          <label for="moreinfo">Any more information you want to give us?</label><br>
+          <textarea name="moreinfo" id="moreinfo" cols="60" rows="10" placeholder="Describe here"></textarea><br>
+          <button>Report</button>
+        </form>
+      </div>
+    </div>
+    <div class="volunteer-form">
+      <div>
+        <h2>Want to help us?</h2>
+        <form>
+          <label for="full-name">Full Name</label>
+          <input type="text" name="full-name" id="full-name" required><br>
+          <label for="contact">Contact</label>
+          <input type="text" name="contact" id="contact" required><br>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required><br>
+          <label for="dob">Date of Birth</label>
+          <input type="date" name="dob" id="dob" required><br>
+          <label for="descride">Why do you want to joim us?</label><br>
+          <textarea name="describe" id="describe" cols="70" rows="30" placeholder="Describe your motive to join us"
+            required></textarea><br>
+          <button>Submit</button>
+        </form>
+      </div>
+    </div>
+
+  </main>
+  <script src="script.js"></script>
 </body>
+
 </html>
