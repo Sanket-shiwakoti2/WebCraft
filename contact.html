@@ -13,9 +13,7 @@
   <header>
     <div class="container">
       <nav>
-        <img
-          src="https://cdn.vectorstock.com/i/1000x1000/88/62/my-logo-letter-monogram-slash-with-modern-logo-vector-27868862.webp"
-          alt="" class="logo">
+        <img src="logo.png" alt="" class="logo">
         <div id="hamburger" onclick="toggleNav()">
           <span></span>
           <span></span>
@@ -23,62 +21,63 @@
         </div>
         <ul id="nav-list">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="Blog.html">Blog</a></li>
           <li><a href="service.html">Services</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="report.html">Report</a></li>
         </ul>
-        <div class="sb">
-          <input type="text" name="search" id="" placeholder="Search">
-          <button>
-            login
 
-          </button>
-        </div>
       </nav>
     </div>
   </header>
   <main>
-    <div class="report-form">
-      <div>
-        <h2>Report abuse</h2>
-        <form>
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" required>
-          <br>
-          <label for="contact">Contact</label>
-          <input type="text" name="contact" id="contact" required>
-          <br>
-          <label for="report">What do you want to report?</label>
-          <select name="report" id="report" required>
-            <option value="" selected>--Select--</option>
-            <option value="illtreatment/voilence">Illtreatment/Voilence</option>
-            <option value="abandonment">Abandonment</option>
-            <option value="rescue">Rescue request</option>
-          </select>
-          <br>
-          <label for="moreinfo">Any more information you want to give us?</label><br>
-          <textarea name="moreinfo" id="moreinfo" cols="60" rows="10" placeholder="Describe here"></textarea><br>
-          <button>Report</button>
-        </form>
+    <div class="forms">
+      <div class="report-form">
+        <div>
+          <h2 class="header">Report abuse</h2>
+          <div class="main-form">
+            <form>
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" required>
+              <br>
+              <label for="contact">Contact</label>
+              <input type="text" name="contact" id="contact" required>
+              <br>
+              <label for="report">What do you want to report?</label>
+              <select name="report" id="report" required>
+                <option value="" selected>--Select--</option>
+                <option value="illtreatment/voilence">Illtreatment/Voilence</option>
+                <option value="abandonment">Abandonment</option>
+                <option value="rescue">Rescue request</option>
+              </select>
+              <br>
+              <label for="moreinfo">Any more information you want to give us?</label><br>
+              <textarea name="moreinfo" id="moreinfo" cols="60" rows="10" placeholder="Describe here"></textarea><br>
+              <button class="button">Report</button>
+            </form>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="volunteer-form">
-      <div>
-        <h2>Want to help us?</h2>
-        <form>
-          <label for="full-name">Full Name</label>
-          <input type="text" name="full-name" id="full-name" required><br>
-          <label for="contact">Contact</label>
-          <input type="text" name="contact" id="contact" required><br>
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" required><br>
-          <label for="dob">Date of Birth</label>
-          <input type="date" name="dob" id="dob" required><br>
-          <label for="descride">Why do you want to joim us?</label><br>
-          <textarea name="describe" id="describe" cols="70" rows="30" placeholder="Describe your motive to join us"
-            required></textarea><br>
-          <button>Submit</button>
-        </form>
+      <div class="volunteer-form">
+        <div>
+          <h2 class="header">Want to help us?</h2>
+          <div class="main-form">
+            <form>
+              <label for="full-name">Full Name</label>
+              <input type="text" name="full-name" id="full-name" required><br>
+              <label for="contact">Contact</label>
+              <input type="text" name="contact" id="contact" required><br>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required><br>
+              <label for="dob">Date of Birth</label>
+              <input type="date" name="dob" id="dob" required><br>
+              <label for="descride">Why do you want to join us?</label><br>
+              <textarea name="describe" id="describe" cols="70" rows="10" placeholder="Describe your motive to join us"
+                required></textarea><br>
+              <button class="button">Submit</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
 
